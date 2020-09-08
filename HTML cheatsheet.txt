@@ -1,0 +1,366 @@
+HTML Tags with explanation
+-------------------------- 
+
+Basic Tags
+-----------
+<html> </html>
+Creates an HTML document
+
+<head> </head> 
+This contains metadata (document title, character set, styles, links, scripts)
+specific information about the web page will not be displayed
+
+
+<title> </title>
+Display name of the document in the title bar.This specifies the title of a web page.
+
+
+<body> </body>
+This defines the main content of the HTML document or the section of the HTML document that will be directly visible on your web page.
+
+
+<body bgcolor=?>
+Sets background color, using name or hex value
+
+<body text=?>
+Sets text color, using name or hex value
+
+<body link=?>
+Sets color of links, using name or hex value
+
+<body vlink=?>
+Sets color of visited links, using name or hex value
+
+<body alink=?>
+Sets color of active links (while mouse-clicking)
+
+<body background ="url">
+This is used to set up the background Image
+
+
+Text Tags
+--------
+<pre> </pre>
+Creates preformatted text. The text preserves both spaces and line breaks. The text will be displayed exactly as written in the HTML source code.
+
+<h1> </h1> --> <h6> </h6>
+Creates headlines . H1=largest, H6=smallest
+
+<b> </b>
+Creates bold text (should use <strong> instead)
+
+<strong> </strong>
+Emphasizes a word (usually processed in bold)
+
+<i> </i>
+Creates itailic text (should use <em> instead)
+
+<em> </em>
+Emphasizes a word (usually processed in italics)
+
+<tt> </tt>
+Creates typewriter-style text.
+
+<code> </code>
+Used to define source code, usually monospace
+
+<cite> </cite>
+The text are usually processed in italics. This is also used to define the source code 
+
+<address> </address>
+Creates address section, usually processed in italics
+
+
+<font size=?> </font>
+Sets size of font - 1 to 7 (should use CSS instead)
+
+<font color=?> </font>
+Sets font color (should use CSS instead)
+
+<font face=?> </font>
+Defines the font used (should use CSS instead)
+
+<strike> ... </strike>, <s> </s> or <del> </del>
+Strikeout the text  (should used CSS instead)
+
+<sup> ... </sup>
+Superscript - Smaller text placed above normal text	
+
+<sub> ... </sub>
+Subscript - Smaller text placed below normal text	
+
+<small> ... </small>
+Defines the text in smaller
+
+
+Links
+-----
+<a href="URL">clickable text</a>
+Creates a hyperlink to URL
+
+<a href="mailto:EMAIL_ADDRESS">....</a>
+Creates a hyperlink to an email address
+
+<a name="NAME">
+Create a name of the link (Bookmark name, anchor name)
+
+<a href="#NAME">.....</a>
+Creates a link to that target location.Link to a bookmark (defined with name attribute)
+
+
+Formatting
+----------
+<p> </p>
+Creates a new paragraph
+
+<br>
+Insert a line break 
+
+<blockquote> </blockquote>
+Puts content in a quote - indents text from both sides
+
+<div> </div>
+Used to format block content with CSS. this can be used with class or id attribute
+
+<span> </span>
+Used to format inline content with CSS
+
+Lists
+------
+
+<li> </li>
+List item with ordered or unordered list
+
+<ul> </ul>
+Creates an unordered list
+
+<ul type="?">	</ul>
+Unordered list bullet type: disc, circle, square
+
+<ol> </ol>
+unordered list
+
+<ol start=?> </ol>
+Creates an ordered list (start=xx,
+where xx is a counting number)
+
+<ol type="?">	</ol>
+Ordered list type: A, a, I, i, 1
+
+
+<dl> </dl>
+Creates a definition list
+
+<dt>
+terms that are being defined
+
+<dd>
+Detailed descripition of each term
+
+ Graphical elements
+-------------------
+<hr>
+Inserts a horizontal rule
+
+<hr size=?>
+Sets size (height) of horizontal rule
+
+<hr width=?>
+Sets width of rule (In % or absolute pixel length)
+
+<hr noshade>
+Creates a horizontal rule without a shadow
+
+<hr color="#?"	>
+ Colour of the horizontal line
+
+<hr align="?">	
+Horizontal Alignment: left, center, right
+
+<img src="URL" />
+Adds image. This can be URL or filename of the image
+
+<img src="URL" align=?>
+Aligns image left/right/center/bottom/top/middle (use CSS)
+
+<img src="URL" border=?>
+Sets size of border surrounding image. Border Thickness (use CSS)
+
+<img src="URL" height=?>
+Sets height of image, in pixels or %
+
+<img src="URL" width=?>
+Sets width of image, in pixels or %
+
+<img src="URL" alt=?>
+Sets the alternate text for browsers that can't
+process images 
+
+<img src="URL vspace="??">	
+Space above and below image (in pixels)
+
+<img src="URL hspace="??">	
+Space on either side of image (in pixels) 
+
+
+Forms
+------
+<form> </form>
+Defines a form. Form input group decleration
+
+action="url"	URL of Form Script
+method="***"	Method of Form: get, post
+enctype="***"	For File Upload: enctype="multipart/form-data"
+
+<select> </select >
+Select options from drop down list
+
+<select multiple name=? size=?> </select>
+Multiple allow number of selection. Size defines the number of selectable option.
+
+<select name=?> </select>
+Creates a pulldown menu(dropdown)
+
+<option>
+Item that are displayed in the dropdownlist
+
+<option value="***">	
+Option Value
+
+<textarea> ... </textarea>	
+Large area for text input
+
+<textarea name=? cols="x" rows="y" warp ="***"></textarea>
+Creates a text box area. Columns set the width;
+rows set the height. Word Wrapping: off, hard, soft
+
+<input> ... </input>	
+Input field within form
+
+type="***"	Input Field Type: text, password, checkbox, submit etc.
+name="***"	Form Field Name (for form processing script)
+value="***"	Value of Input Field
+size="***"	Field Size
+maxlength="?"	Maximum Length of Input Field Data
+checked	        Mark selected field in radio button group or checkbox
+
+<input type="checkbox" name=? value=?>
+creates a checkbox
+
+<input type="checkbox" name=? value=? checked>
+Creates a checkbox which is pre-checked.
+
+<input type="radio" name=? value=?>
+Creates a radio button.
+
+<input type="radio" name=? value=? checked>
+Creates a radio button which is pre-checked.
+
+<input type="text" name=? size=?>
+Creates a one-line text area. Size sets length, in
+characters.
+
+<input type="submit" value=?>
+Creates a submit button. Value sets the text in the
+submit button.
+
+<input type="image" name=? src=? border=? alt=?>
+Creates a submit button using an image.
+
+<input type="reset">
+Creates a reset button
+
+Tables (use only for data layout - use CSS for page layout) Table attributes (only use for email newsletters)
+------
+<table> </table>
+Creates a table
+
+<table cellspacing=?>
+Sets amount of space between table cells
+
+<table cellpadding=?>
+Sets amount of space between a cell's border and  its contents
+
+<table width=?>
+Sets width of the table in pixels or as a percentage
+
+<table border=?>
+Sets the width of the border around table cells
+
+<tr> </tr>
+Sets off each row in a table
+
+<td> </td>
+Sets off each cell in a row
+
+<th> </th>
+Sets off the table header (a normal cell with bold, centered text)
+
+<tr align=?>
+Sets alignment for cells within the row
+(left/center/right)
+
+<td align=?>
+Sets alignment for cells (left/center/right)
+
+<tr valign=?>
+Sets vertical alignment for cells within the row
+(top/middle/bottom)
+
+<td valign=? bgcolor="#??????">
+Sets vertical alignment for cell (top/middle/bottom). bgcolour gives the background color
+
+<td rowspan=?>
+Sets number of rows a cell should span (default=1)
+
+<td colspan=?>
+Sets number of columns a cell should span
+
+<td nowrap>
+Prevents lines within a cell from being broken to fit
+
+
+Special Characters
+------------------
+	
+&lt;	< - Less-Than Symbol
+
+&gt;	> - Greater-Than Symbol
+
+&amp;	& - Ampersand, or 'and' sign
+
+&quot;	" - Quotation Mark
+
+&copy;	© - Copyright Symbol
+
+&trade;	™ - Trademark Symbol
+
+&nbsp;	  - A space (non-breaking space)
+
+&#??;	ISO 8859-1 character - replace ?? with the iso code
+
+
+Miscellaneous Tags
+-----------------
+	
+<!-- ... -->	Comment within HTML source code
+
+<!DOCTYPE html ... >	Document Type Definition (wiki)
+
+<meta> ... </meta>	META information tag
+
+name="***"	Meta name: description, keywords, author
+
+http-equiv="***"	HTTP Equivalent Info: title, etc.
+
+content="***"	Information content
+
+<link>	LINK content relationship tag
+
+rel="***"	Type of forward relationship
+
+http="url"	Location (URL) of object or file being linked
+
+type="***"	Type of object or file, eg: text/css
+
+title="***"	Link title (optional)
