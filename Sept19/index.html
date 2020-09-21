@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+            border-collapse: collapse;
+            font-size:13px;
+            font-family:arial;
+            
+     
+}
+* 
+{
+margin: 0px; 
+padding: 0px
+}
+
+<title>
+PanCard Details
+</title></style></head> 
+
+
+<body bgcolor="#FFFFDD">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr bgcolor="brown" >
+<td colspan="4" align="CENTER" width="1358px" style="font-size:13px;font-family:arial">
+<b><font color="white">Request For New PAN Card Or/And Changes Or Correction in PAN Data</font></b><br>
+<i><font color="white">Fields marked with <font color="RED">*</font> (asterisk) are mandatory.  To avoid mistake(s), please refer 
+<a href="guidelines" style="color:orange"> guidelines</a> and <a href="instruction" style="color:orange"> instructions </a></i></font><br>
+</td></tr></table>
+
+<form method="GET" onSubmit="showAlert()">
+
+
+<table border="1" cellpadding="0" cellspacing="1" width="98%">  
+<tr>
+<td>&nbsp;</td>
+<td colspan="2" width="98%" required >
+<b> <font color="RED"> * </font> Whether citizen of India</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <label for="yes">Yes</label>
+ <input type="radio" name="radio" id="yes" value="Yes" >
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <label for="no">No</label>
+ <input type="radio" name="radio" id="no" value="No" >
+</td></tr>
+
+<tr style="color:grey"> 
+<td>&nbsp;</td>
+<td colspan="2" >
+<b> <font color="RED"> * </font>
+<font color="black"> Permanent Account Number (PAN)</font></b>
+<input type="text" name="PAN_NUM" align="center" required>
+</td>
+</tr>
+          
+<tr > 
+<td  style="text-align:center" >
+<input type="checkbox" name="Pan_check"   value="Y" required >
+</td></td>
+<td colspan="2" >
+<b> <font color="RED"> * </font>
+ 1.Name</font></b>
+</td>
+</tr>    
+
+
+<tr > 
+<td>&nbsp;</td>
+<td colspan="2" >
+<b> Title </b>
+&nbsp;&nbsp;&nbsp;&nbsp;
+Shri/Mr
+<input type="radio" name="Pan_title"   value=1 >
+&nbsp;&nbsp;&nbsp;&nbsp;
+Smt./Mrs.
+<input type="radio" name="Pan_title"   value=2 >
+&nbsp;&nbsp;&nbsp;&nbsp;
+Kumari/Ms
+<input type="radio" name="Pan_title"   value=3 >
+&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="blue">M/s</blue>
+<input type="radio" name="Pan_title"  >
+</td>
+</tr>  
+
+<tr > 
+<td>&nbsp;</td>
+<td colspan="2" >
+<table  cellpadding="0" cellspacing="0" width="100%"> 
+<tr><td>
+<b>Last Name/Surname</b><br>
+<input type="text" name="Pan_ls" ></td>
+</td>
+<td>
+<b>First Name</b><br>
+<input type="text" name="Pan_fn" ></td>
+<td>
+<b>Middle Name</b><br>
+<input type="text" name="Pan_md" ></td>
+</tr>
+</td>
+</tr></table>
+
+
+<tr > 
+<td>&nbsp;</td>
+<td colspan="2" >
+<b> <font color="RED"> * </font>
+ Name as you would like it printed on the card</b>
+<font color="blue">(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc. are not allowed)</font>
+</td></tr>
+<tr > 
+<td>&nbsp;</td>
+<td colspan="2" >
+<input type="text" name="Pan_card" value size="35"maxlength="85" required></td></tr>
+
+
+
+<tr > 
+<td>&nbsp;</td>
+<td colspan="2">
+<b> 
+Details of Parents. </b>
+<font color="blue">(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc. are not allowed.)</font>
+</td></tr>
+
+
+
+<tr > 
+<td>&nbsp;</td>
+<td>
+<b> Whether mother is single parent and you wish to apply for PAN by furnishing the name of <br>
+your mother only</b></br></td>
+
+<td colspan="2" >
+<label>Yes</label>
+ <input type="radio" name="Pan_radio">
+ <label>No</label>
+ <input type="radio" name="Pan_radio"><br>
+</td></tr>
+
+
+
+<tr > 
+<td style="text-align:center">
+<input type="checkbox" name="Pan_check"   value="Y" ></td>
+<td colspan="2" required>
+<b> <font color="RED"> * </font>
+ Father's Name</b>
+<font color="blue">(Mandatory field. Even married women should give father's name only.)</font>
+</td></tr>
+<tr > 
+<td>&nbsp;</td>
+<td colspan="2" >
+<table  cellpadding="0" cellspacing="0" width="100%"> 
+<tr><td>
+<b>Last Name/Surname</b><br>
+<input type="text" name="Pan_ls" ></td>
+</td>
+<td>
+<b>First Name</b><br>
+<input type="text" name="Pan_fn" ></td>
+<td>
+<b>Middle Name</b><br>
+<input type="text" name="Pan_md" ></td>
+</tr>
+</td>
+</tr></table>
+
+
+<tr > 
+<td style="text-align:center">
+<input type="checkbox" name="Pan_check"   value="Y" >
+</td>
+<td colspan="2">
+<font color="blue">Mother's Name(This field is optional.)</font>
+</td></tr>
+<tr > 
+<td>&nbsp;</td>
+<td colspan="2" >
+<table  cellpadding="0" cellspacing="0" width="100%"> 
+<tr><td>
+<b>Last Name/Surname</b><br>
+<input type="text" name="Pan_ls" ></td>
+</td>
+<td>
+<b>First Name</b><br>
+<input type="text" name="Pan_fn" ></td>
+<td>
+<b>Middle Name</b><br>
+<input type="text" name="Pan_md" ></td>
+</tr>
+</td>
+</tr></table>
+
+
+
+<tr > 
+<td>&nbsp;</td>
+<td required>
+<b> <font color="RED"> * </font>
+ 4. Select Parent name which is to be printed on the card<br></b>
+<font color="blue">(In case no option is provided then PAN card will be issued with father's name)</font></br></td>
+
+<td  >
+Father Name
+<input type="radio" name="Pan_Fa" value="F" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Mother Name
+<input type="radio" name="Pan_MA" value="M">
+</td>
+</tr>
+
+
+<tr > 
+<td style="text-align:center">
+<input type="checkbox" name="Pan_check"   value="Y" ></td>
+<td required>
+<b> <font color="RED"> * </font>
+  5. Date of Birth/Incorporation/Agreement/Partnership<br>
+or Trust Deed/Formation of Body of Individuals/<br>
+Association of Persons<br></b>
+</td>
+
+</td>
+  <td>
+  <table cellpadding="0" cellspacing="0" border="0">
+   <tr>
+    <td valign="top"><font size=-1>dd</font><br>
+         <select name=PAN_DT_BRTH_DD>
+           <option value="" > DD</option>
+           <option value="01" > 1</option>
+           <option value="02" > 2</option>
+           <option value="03" > 3</option>
+           <option value="04" > 4</option>
+           <option value="05" > 5</option>
+           <option value="06" > 6</option>
+           <option value="07" > 7</option>
+           <option value="08" > 8</option>
+           <option value="09" > 9</option>
+           <option value="10" > 10</option>
+           <option value="11" > 11</option>
+           <option value="12" > 12</option>
+           <option value="13" > 13</option>
+           <option value="14" > 14</option>
+           <option value="15" > 15</option>
+           <option value="16" > 16</option>
+           <option value="17" > 17</option>
+           <option value="18" > 18</option>
+           <option value="19" > 19</option>
+           <option value="20" > 20</option>
+           <option value="21" > 21</option>
+           <option value="22" > 22</option>
+           <option value="23" > 23</option>
+           <option value="24" > 24</option>
+           <option value="25" > 25</option>
+           <option value="26" > 26</option>
+           <option value="27" > 27</option>
+           <option value="28" > 28</option>
+           <option value="29" > 29</option>
+           <option value="30" > 30</option>
+           <option value="31" > 31</option>
+         </select>
+    </td>
+    <td valign="top"><font size=-1>MM</font><br>
+         <select name=PAN_DT_BRTH_MM>
+           <option value="" > MM</option>
+           <option value="01" > JAN</option>
+           <option value="02" > FEB</option>
+           <option value="03" > MAR</option>
+           <option value="04" > APR</option>
+           <option value="05" > MAY</option>
+           <option value="06" > JUN</option>
+           <option value="07" > JUL</option>
+           <option value="08" > AUG</option>
+           <option value="09" > SEP</option>
+           <option value="10" > OCT</option>
+           <option value="11" > NOV</option>
+           <option value="12" > DEC</option>
+         </select>
+    </td>
+    <td valign="top"><font size="-1">YYYY</font><br>
+         <input type="text" name="PAN_DT_BRTH" value="" size="4" maxlength="4">
+    </td>
+   </tr>
+   </table>
+ </td>
+</tr>
+
+
+
+<tr > 
+<td style="text-align:center"><input type="checkbox" name="gender"   value="Y" ></td>
+<td>
+<b> <font color="RED"> * </font>
+ 6.Gender<br></b>
+</td>
+<td>
+<label>Female</label>
+ <input type="radio" name="Pan_F">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <label>Male</label>
+ <input type="radio" name="Pan_M">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+ <label>Transgender</label>
+ <input type="radio" name="Pan_T">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td></tr>
+
+
+
+<tr > 
+<td style="text-align:center"><input type="checkbox" name="Pan_Photo"   value="Y" ></td>
+<td colspan="2" >
+<b> 
+ 7. Photo Mismatch
+</b>
+</td></tr>
+
+
+<tr > 
+<td style="text-align:center"><input type="checkbox" name="Pan_sign"   value="Y" ></td>
+<td colspan="2" >
+<b> 
+ 8. Signature Mismatch
+</b>
+</td></tr>
+
+
+
+<tr > 
+<td style="text-align:center"><input type="checkbox" name="addr"   value="Y" ></td>
+<td>
+<b> <font color="RED"> * </font>
+9. Address for Communication
+</b>
+</td>
+<td colspan="2" >
+<label>Residential</label>
+ <input type="radio" name="Pan_R">
+ &nbsp;&nbsp;
+ <label>Office</label>
+ <input type="radio" name="Pan_Off"></td></tr>
+
+
+
+<tr > 
+<td>&nbsp;</td>
+<td>
+<b> Office Name</b>
+<i>(to be filled only in case of office address)</i>
+<td>
+<input type="text" name="Pan_oname" value size="30"></td></tr>
+
+
+<tr > 
+<td>&nbsp;</td>
+<td>
+<b> Flat/Door/Block No.
+</b>
+<td>
+<input type="text" name="Pan_flat" ></td></tr>
+
+
+<tr > 
+<td>&nbsp;</td>
+<td>
+<b> Name of Premises/Building/Village
+</b>
+<td>
+<input type="text" name="Pan_build" ></td></tr>
+
+
+
+<tr > 
+<td>&nbsp;</td>
+<td>
+<b> Road/Street/Lane/Post Office
+</b>
+<td>
+<input type="text" name="Pan_road" ></td></tr>
+
+<tr > 
+<td>&nbsp;</td>
+<td>
+<b> Area/Locality/Taluka/Sub-Division
+</b>
+<td>
+<input type="text" name="Pan_area" ></td></tr>
+
+
+<tr > 
+<td>&nbsp;</td>
+<td>
+<b> Town/City/District</b>
+<td>
+<input type="text" name="Pan_town" ></td></tr>
+
+
+<tr > 
+<td>&nbsp;</td>
+<td>
+<b> State/Union Territory</b>
+<td>
+    <select name="PAN_state ">
+      <option value="" >-- Please select --</option>
+      <option value="1" > Andaman & Nicobar Islands</option>
+      <option value="2" > Andhra Pradesh</option>
+      <option value="3" > Arunachal Pradesh</option>
+      <option value="4" > Assam</option>
+      <option value="5" > Bihar</option>
+      <option value="6" > Chandigarh</option>
+      <option value="33" > Chhattisgarh</option>
+      <option value="7" > Dadara & Nagar Haveli</option>
+      <option value="8" > Daman & Diu</option>
+      <option value="9" > Delhi</option>
+      <option value="10" > Goa</option>
+      <option value="11" > Gujarat</option>
+      <option value="12" > Haryana</option>
+      <option value="13" > Himachal Pradesh</option>
+      <option value="14" > Jammu & Kashmir</option>
+      <option value="35" > Jharkhand</option>
+      <option value="15" > Karnataka</option>
+      <option value="16" > Kerala</option>
+      <option value="17" > Lakhswadeep</option>
+      <option value="18" > Madhya Pradesh</option>
+      <option value="19" > Maharashtra</option>
+      <option value="20" > Manipur</option>
+      <option value="21" > Meghalaya</option>
+      <option value="22" > Mizoram</option>
+      <option value="23" > Nagaland</option>
+      <option value="24" > Orissa</option>
+      <option value="25" > Pondicherry</option>
+      <option value="26" > Punjab</option>
+      <option value="27" > Rajasthan</option>
+      <option value="28" > Sikkim</option>
+      <option value="29" > Tamil Nadu</option>
+      <option value="36" > Telangana</option>
+      <option value="30" > tripura</option>
+      <option value="31" > Uttar Pradesh</option>
+      <option value="34" > Uttaranchal</option>
+      <option value="32" > West Bengal</option>
+       <option value="37" > Ladakh</option>
+      <option value="99" > Outside India </option>
+    </select>
+   </td>
+</tr>
+	
+
+
+<tr > 
+<td>&nbsp;</td>
+<td>
+<b> PIN </b>
+<i>(Indicating PIN is mandatory)</i>
+<td>
+<input type="text" name="Pan_pin" value size="20"></td></tr>
+
+	
+
+
+<tr>
+  <td>&nbsp;</td>
+  <td><B>Country</B></td>
+  <td>
+    <select name="PAN_country" >
+ <option value="" >-- Please select --</option>
+      <option value="AR" >Argentina</option>
+      <option value="AU" >Australia</option>
+      <option value="AT" >Austria</option>
+      <option value="BH" >Bahrain</option>
+      <option value="BD" >Bangladesh</option>
+      <option value="BB" >Barbados</option>
+      <option value="BY" >Belarus</option>
+      <option value="BE" >Belgium</option>
+      <option value="BM" >Bermuda</option>
+      <option value="BT" >Bhutan</option>
+      <option value="BW" >Botswana</option>
+      <option value="BR" >Brazil</option>
+      <option value="BN" >Brunei Darussalam</option>
+      <option value="BG" >Bulgaria</option>
+      <option value="KH" >Cambodia</option>
+      <option value="CA" >Canada</option>
+      <option value="CV" >Cape Verde</option>
+      <option value="KY" >Cayman Islands</option>
+      <option value="CN" >China</option>
+
+</select>
+  </td>
+</tr>
+
+
+
+
+<tr>
+  <td>&nbsp;</td>
+  <td><B>Zip</B></td>
+  <td><input type="text" NAME="PAN_ZIP" value="" size="7" maxlength="7" ></td>
+</tr>
+
+
+
+<tr>
+  <td>&nbsp;</td>
+  <td colspan="2">
+<b>
+	10. If you desire to update your other address, give required details & <u>Submit proof of other address also.<u>
+</b>
+</td>
+</tr>
+
+
+<tr>
+  <td align="center"><input type="checkbox" name="addr"   value="Y" ></td>
+  <td><b><font color="RED">* </font>11. Telephone No.</b><br>
+(Country code is compulsory)</td>
+<td>
+<table border="1">
+<tr>
+ <td width="100%" align="LEFT" colspan="3">
+        <font size="-1">Country code (ISD code)</font><br>
+        <SELECT NAME=PAN_CC >
+        <option value="" >-- Please select --</option>
+      <option value="AR" >Argentina(45)</option>
+      <option value="AU" >Australia(89)</option>
+      <option value="AT" >Austria</option>
+      <option value="BH" >Bahrain</option>
+      <option value="BD" >Bangladesh</option>
+      <option value="BB" >Barbados</option>
+      <option value="BY" >Belarus</option>
+      <option value="BE" >Belgium</option>
+      <option value="BM" >Bermuda</option>
+      <option value="BT" >Bhutan</option>
+      <option value="BW" >Botswana</option>
+      <option value="BR" >Brazil</option>
+      <option value="BN" >Brunei Darussalam</option>
+      <option value="BG" >Bulgaria</option>
+      <option value="KH" >Cambodia</option>
+      <option value="CA" >Canada</option>
+      <option value="CV" >Cape Verde</option>
+      <option value="KY" >Cayman Islands</option>
+      <option value="CN" >China</option>
+
+</select>
+        </select>
+     </td>
+</tr>
+
+
+<tr>
+<td colspan="1">
+<input type = "radio" name = "PAN_TEL_NUM_GRP" id="panmobnum" value="M"   > Mobile No.
+</td>
+
+<td colspan="1">
+<input type = "radio" name = "PAN_TEL_NUM_GRP" id="pantelnum" value="T"   > Telephone No.
+</td>
+
+</tr>
+<tr>
+
+
+     <td width="100%" align="LEFT">
+      <font size=-1>Area/Std Code</font><br>
+      <INPUT TYPE="text" NAME="PAN_TEL_Std" VALUE="" id="pantelnum1" size="10" MAXLENGTH="7">
+     </td>
+
+     <td width=100% align="LEFT">
+      <font size=-1>Telephone No./Mobile No.</font><br>
+      <INPUT TYPE="text" NAME="PAN_TEL_NUM" VALUE="" id="pantelnum2" size="13" MAXLENGTH="13">
+
+      </td>
+      </table>
+ </td>
+</tr>
+
+
+<tr>
+  <td>&nbsp;</td>
+  <td><b> E-mail ID</b></td>
+  <td><INPUT TYPE="text" NAME="PAN_EMAIL" SIZE="40" MAXLENGTH="40"></td>
+</tr>
+
+
+
+<tr > 
+<td>&nbsp;</td>
+<td>
+	In case of a citizen of India, then
+</td>
+<td colspan="2" >
+<label>AADHAAR</label>
+ <input type="radio" name="Pan_A">
+ &nbsp;&nbsp;
+ <label>EID</label>
+ <input type="radio" name="Pan_eid"></td></tr>
+
+
+<tr>
+  <td style="text-align:center"><input type="checkbox" name="aadh"   value="Y" ></td>
+  <td><b><font color="RED">* </font>12. AADHAAR number :</b><br>
+</td>
+<td colspan="2">
+<INPUT TYPE="text" NAME="PAN_EMAIL" SIZE="40" MAXLENGTH="40"><br>
+    <i><font color="blue">In case AADHAAR number is provided,<br>
+then proof of AADHAAR along with supporting documents is to be submitted to NSDL </font></i>  <br>     </td>    
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+  <td><b><font color="RED">* </font>Name as per AADHAAR letter<br>
+or<br>
+as per the enrollment ID of Aadhaar application form</b><br>
+</td>
+<td colspan="2">
+<INPUT TYPE=text NAME=PAN_E SIZE=78 MAXLENGTH=40></td>
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+  <td><b>13. GSTN</b>
+</td>
+<td colspan="2">
+<INPUT TYPE=text NAME=PAN_M SIZE=30></td>
+</tr>
+
+
+<tr>
+  <td style="text-align:center"><input type="checkbox" name=aadh   value="Y" ></td>
+  <td colspan="2">
+<b>
+	14. Mention other Permanent Account Numbers (PANs) if any,inadvertently allotted to you.  <u>Submit proof of surrendered PAN(s) along with the application.<u>
+</b>
+</td>
+</tr>
+
+
+<tr > 
+<td>&nbsp;</td>
+<td >
+<b> PAN 1</b>
+<input type="text" name="PAN1" align="center">
+</td>
+<td colspan="2" >
+<b> PAN 3</b>
+<input type="text" name="PAN3" align="center">
+</td>
+</tr>
+
+
+<tr > 
+<td>&nbsp;</td>
+<td  >
+<b> PAN 2</b>
+<input type="text" name="PAN2" align="center">
+</td>
+<td colspan="2" >
+<b> PAN 4</b>
+<input type="text" name="PAN4" align="center">
+</td>
+</tr>
+
+
+<tr>
+  <td>&nbsp;</td>
+  <td colspan="2">
+<b>
+	15. Verification
+</b>
+</td>
+</tr>
+
+<tr>
+   <td>&nbsp;</td>
+   <td COLSPAN=2><B> 15. Verification </B></td>
+</tr>
+
+<tr>
+    <td>&nbsp;</td>
+    <td COLSPAN=2 valign=top>I/We 
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type=text NAME=PAN_VERIFY_NAME value=""  SIZE=75 MAXLENGTH=75 > 
+    ,the applicant,in the capacity of
+    &nbsp;&nbsp;&nbsp;
+    <SELECT NAME=PAN_VERIFY_CAPACITY>
+             <OPTION value="" >-- Please Select --
+             <OPTION value="01" > Himself/herself
+             <OPTION value="07" > Representative Assessee
+        </SELECT>
+    do hereby declare that what is stated above is true to the best of my information and belief. <BR>
+    I have enclosed <input type=text NAME=PAN_NOCOPY value="" SIZE=2 MAXLENGTH=2>
+    (number of documents) in support of proposed changes/corrections.
+  </td>
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+  <td COLSPAN=3>Place
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type=text NAME=PAN_PLACE value="" SIZE=30 MAXLENGTH=30>
+  </td>
+ </tr>
+
+<tr>
+  <td>&nbsp;</td>
+  <td valign=top COLSPAN=2>
+    <table cellpadding=0 CELLSPACING=0 border=0>
+    <tr>
+      <td valign=BOTTOM>Verified today, the</td>
+      <td WIDTH=5><BR></td>
+      <td valign=BOTTOM><FONT SIZE=-1>DD</FONT><BR>
+        19 -
+      </td>
+      <td valign=BOTTOM><FONT SIZE=-1>MM</FONT><BR>
+        09 -
+      </td>
+      <td valign=BOTTOM><FONT SIZE=-1>YYYY</FONT><BR>
+        2020
+      </td>
+    </tr>
+    </table>
+    <input type=HIDDEN NAME=PAN_VERI_DD value="19">
+    <input type=HIDDEN NAME=PAN_VERI_MM value="09">
+    <input type=HIDDEN NAME=PAN_VERI_YYYY value="2020">
+  </td>
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+  <td colspan="2" valign="TOP">I/We have enclosed
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       <select name="PAN_PRF_IDNTY" style="white-space: nowrap">
+       <option value="" selected="" title="-- Please Select --">-- Please Select --</option>
+	   <option value="9" title="Copy of passport">Copy of passport</option>
+	   <option value="36" title="Copy of Person of Indian Origin card issued by Government of India">
+	   Copy of Person of Indian Origin card issued by Government of India</option>
+	   <option value="37" title="Copy of Overseas Citizenship of India card issued by Government of India">
+	   Copy of Overseas Citizenship of India card issued by Government of India</option>
+	   <option value="33" title="Copy of National ID/Citizenship ID/Taxpayer ID attested by Indian Embassy/Consulate/High Commission/Apostille/authorised officials of overseas branches of Scheduled Banks registered in India">
+	   Copy of National ID/Citizenship ID/Taxpayer ID attested by Indian Embassy/Consulate/High Commission/Apostille/authorised officials of overseas branches of Scheduled Banks registered in India</option></select>
+       as proof of identity, 
+       
+       <select name="PAN_PRF_ADDR" style="white-space: nowrap"">
+       <option value="" selected="" title="-- Please select --">-- Please select --</option>
+	   <option value="8" title="Copy of passport">Copy of passport</option>
+	   <option value="5" title="Copy of Bank account statement in the country of residence">
+	   Copy of Bank account statement in the country of residence</option><option value="38" 
+	   title="Copy of certificate of residence in India or Residential permit issued by the State Police Authority">Copy of certificate of residence in India or Residential permit issued by the State Police Authority</option>
+	   <option value="39" title="Copy of the registration certificate issued by the Foreigner&#39;s Registration Office showing Indian address">
+	   Copy of the registration certificate issued by the Foreigner's Registration Office showing Indian address
+	   </option><option value="40" title="Copy of Person of Indian Origin card issued by Government of India">
+	   Copy of Person of Indian Origin card issued by Government of India</option><option value="41" 
+	   title="Copy of Non-resident External bank account statement in India">
+	   Copy of Non-resident External bank account statement in India</option>
+	   <option value="42" title="Copy of Visa granted and copy of appointment letter or contract from Indian Company and Certificate (in original) of Indian Address issued by the employer">
+	   Copy of Visa granted and copy of appointment letter or contract from Indian Company and Certificate (in original) of Indian Address issued by the employer</option><option value="43" title="Copy of Overseas Citizen of India card issued by Government of India">
+	   Copy of Overseas Citizen of India card issued by Government of India</option></select>
+       as proof of address, 
+	<select id="selectAccordingToCountryPOB" name="PAN_PRF_DOB">
+	
+	<option value="" selected="">-- Please select --
+	</option><option value="0001">
+	Copy of Birth certificate issued by the Municipal Authority or any office authorised to issue Birth and Death Certificate by the Registrar of Birth and Deaths or the Indian Consulate</option><option value="0002">Copy of Pension payment order</option>
+	<option value="0003">Copy of Marriage certificate issued by Registrar of Marriages</option>
+	<option value="0004">Copy of Matriculation certificate</option>
+	<option value="0005">Copy of Passport</option><option value="0006">Copy of Driving licence</option>
+	<option value="0007">Copy of Domicile certificate issued by the Government</option><option value="0008">
+	Copy of Affidavit sworn before a magistrate stating the date of birth</option>
+	<option value="0009">Copy of Elector�s photo identity card</option>
+	<option value="0010">Copy of Aadhaar Card issued by the Unique Identification Authority of India
+	</option><option value="0011">Copy of Central Government Health Service Scheme Card</option>
+	<option value="0012">Copy of Ex-Servicemen Contributory Health Scheme photo card</option>
+	<option value="0013">Copy of Photo identity card issued by the Central Government or State Government or Public Sector Undertaking</option>
+	<option value="0014">
+	Copy of Mark sheet of recognised board</option></select>
+        <span id="dob_text">as proof of date of birth and</span>    
+
+       <select name="PAN_PRF_PAN">
+           <option value="">--Please Select--
+           </option><option value="1"> Copy of PAN card
+           </option><option value="2"> Copy of PAN allotment letter
+           </option><option value="3"> No document
+       </option></select>  
+       as proof of PAN allotted.
+ </td>
+</tr>
+
+<tr>
+<td> </td>										
+<td  colspan="2"><b>										
+Whether you wish to have?</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;											
+	<input type="radio" name="PAN_OPT" id="PAN_OPT" value="Y" >										 
+	Physical PAN Card &amp; e-PAN Card
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="PAN_OPT" id="PAN_OPT" value="N" > Only e-PAN Card
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="cursor: pointer; font-style: italic; font-weight: bold">
+<u>Fees Applicable</u></span>	
+<span id="epanId" style="display:none;">
+(Only e-PAN card will be dispatched at email address mentioned in your application, 
+as Physical PAN Card is not requested.)</span></td></tr> 
+
+
+<tr>
+<td>&nbsp;</td>
+<td colspan="2">
+<b>Other Details</b>
+  </td>
+  </tr>
+  
+
+<tr>
+<td>&nbsp;</td>
+<td colspan="2">
+<b>1. Depository Account Details</b>
+  </td>
+  </tr>
+
+
+<tr > 
+<td>&nbsp;</td>
+<td colspan="2" >
+<b> 
+DP ID:</b>
+<input type="text" name="PAN_dp" align="center">
+&nbsp;&nbsp;&nbsp;&nbsp; 
+<b>
+ Client ID:</b>
+<input type="text" name="PAN_dp" align="center">
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td colspan="2">
+<b>	2. Payment Details</b>
+  </td>
+  </tr>
+
+
+<tr > 
+<td  style="text-align:center" >
+<input type="radio" name="Pan_check"   value="Y"  >
+</td></td>
+<td colspan="2" >
+<b>
+Online Payment</font></b>
+</td>
+</tr>  
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="2" width="98%"  >
+For Paperless PAN Application:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <label for="yes">Yes</label>
+ <input type="radio" name="radio" id="yes" value="Yes" >
+ &nbsp;&nbsp
+ <label for="no">No</label>
+ <input type="radio" name="radio" id="no" value="No" >
+</td></tr>
+
+<tr>
+<td colspan="2" width="98%"  >
+  <input type="radio" name="radio" id="ds" value="Yes" >
+ <label for="yes">DSC</label>
+<SELECT NAME=PAN_DSC>
+             <OPTION value="" >-- Please Select --
+             <OPTION value="1" > Minor
+             <OPTION value="2" > Idiot
+			 <OPTION value="3" > Self
+        </SELECT>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<u><font color="brown">  Guidelines for DSC user </u>
+<td>
+</tr>
+ 
+<tr >                
+<td align="left">
+  Upload Photo
+  </td>
+<td>
+<input id="PIC_FILE_NAME" type="file" name="PIC_FILE_NAME" size="15">
+                </td>
+                <td>
+                <div id="PIC_FILE_NAME_MSG"> </div>
+                </td>
+
+             <td align="left">
+                 Upload Signature
+                </td>
+                <td>
+                <input id="SIGN_FILE_NAME" type="file" name="SIGN_FILE_NAME" size="15" >
+                </td>
+		
+                <td>
+                <div id="SIGN_FILE_NAME_MSG"> </div>
+                </td>
+</tr>
+
+<tr id="id6"><td>
+	<br>ALREADY UPLOADED PHOTO:</td><td><input type="text" size="30" id="PIC_FILE_NAME_STATE" name="PIC_FILE_NAME_STATE" value="" readonly="readonly">
+	</td></tr>
+	<tr id="id7"><td>
+	<br>ALREADY UPLOADED SIGNATURE:</td><td><input type="text" id="SIGN_FILE_NAME_STATE" name="SIGN_FILE_NAME_STATE" value="" readonly="readonly">
+	</td></tr>
+	<tr id="id8"><td>
+	<br>ALREADY UPLOADED DOCUMENTS:</td><td><textarea rows="7" cols="40" id="DOC_FILE_NAME_STATE" name="DOC_FILE_NAME_STATE" readonly="readOnly"></textarea>
+	</td></tr>
+	<input type="HIDDEN" name="txtSignature" id="txtSignature" value="">
+	<input type="HIDDEN" id="DOC_ID" name="DOC_ID"> 
+	<input type="HIDDEN" id="USER_TYPE" name="USER_TYPE" value="">
+	<input type="HIDDEN" id="data" name="data" value="">
+	<input type="HIDDEN" id="CERT_SR_NO" name="CERT_SR_NO" value="">
+	<input type="hidden" name="page" value="registration">
+
+	<tr id="id9">
+	<td align="CENTER" colspan="2">
+<input type="button" name="submit" value="Submit" id="submitButton" size="10" maxlength="10" >
+<input type="submit" name="submit" style="display:none;" value="submitt" id="submittId"> 
+
+  </td>
+</tr>
+
+</table>
+
+<script>
+function showAlert(){
+alert('Thank You')
+}
+</script>
+
+       </form>
+	   </table>
+       </body>
+       </html>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
