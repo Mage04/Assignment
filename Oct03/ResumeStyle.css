@@ -1,0 +1,115 @@
+.title
+{  
+    
+    background-color: #555;
+    margin-left:120px;
+    width:80%;
+    height:150px;
+      }
+
+      @media only screen and (min-width:500) {
+        body {
+          background-color: white;
+        }
+      }
+   
+      .title#second{
+
+        background-color: #ededed;
+        height:30px;
+        
+      }
+
+      .title#third{
+
+        background-color: #555;
+        height:30px;
+     
+      }
+
+      #image img
+      {
+          position:absolute;
+          margin-left:35%;
+          top:50px;
+          width:150px;
+          height:110px;
+      }  
+      
+    .naming
+      {
+        background-color: rgba(255, 196, 0, 0.973) ;
+        width:40%;
+        height:50px;
+      border-radius:7px;
+       position:absolute;
+       top:20%; 
+       margin-left:20%;
+       text-align:center;
+       
+      }
+p.info
+{
+    
+    margin-left:25%;
+    color:gray;
+    line-height:30%;
+}
+
+hr
+{
+ margin-left:120px;
+   margin-right:11%;
+  }
+
+#line
+{
+border-left: 2px solid gray;
+height: 650px;
+position: absolute;
+left:50%;
+top:300px;
+}
+
+.main{
+
+    font-style: italic;
+    color:gray;
+    position:absolute;
+    width:35%;
+    padding:20px 30px;
+     margin-left:120px;
+    
+	  
+    }
+
+    .main img
+    {width:25px;
+        height:15x;
+
+    }
+  .main p   {
+      color:black;
+  }
+
+  .import{
+
+    margin-left:700px;
+    width:35%;
+   position:absolute;
+   padding:20px 30px;
+   font-style: italic;
+    color:gray;
+    
+   
+   
+   }
+
+   .import img
+   {
+    width:25px;
+    height:15x;
+   }
+   .import ul   {
+    color:black;
+}
