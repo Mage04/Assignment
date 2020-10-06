@@ -1,0 +1,92 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: 400 46px "Quicksand", Arail;
+  color:white;
+  text-align:center;
+}
+
+
+
+#calculator {
+	width: 325px;
+	height: auto;
+	margin: 100px auto;
+    padding: 20px 20px 9px;
+    border-radius: 10px;
+    
+
+}
+
+
+.top  span.clear{
+	float: left;
+}
+
+
+
+
+.top .screen {
+  height:90px;
+	width: 100%;
+	padding: 0 10px;
+	background: white;
+	border-radius: 5px;
+  margin-bottom:10px;
+	font-size: 30px;
+	line-height: 90px;
+	color: black;
+	text-align: right;
+  overflow:auto;
+  border:8px solid black;
+}
+
+
+.keys  {
+  overflow: hidden;
+}
+
+
+.keys span, .top span.clear {
+	float: left;
+	position: relative;
+	top: 0;
+	background: grey;
+	font-size:27px;
+	cursor: pointer;
+	width: 66px;
+	height: 46px;
+	border-radius: 5px;
+	margin: 0 7px 11px 0;
+	color: white;
+	line-height: 46px;
+	text-align: center;
+	user-select: none;
+  outline: 0 solid;
+
+	
+}
+
+
+.keys span.operator {
+	background:grey;
+	margin-right: 0;
+}
+
+
+
+.keys span.eval {
+	background: black;
+	width: 100%;
+}
+
+span.clear {
+	background: grey;
+
+}
+
+
+
