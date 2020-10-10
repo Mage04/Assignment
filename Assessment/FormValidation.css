@@ -1,0 +1,65 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Alatsi;
+    
+  }
+
+h3{
+    
+    font-size: 25px;         
+    font-style: normal; 
+    font-weight: bold; 
+    color:black;
+    text-align: center; 
+    text-decoration: underline;
+  }
+  
+  .reg-form{
+   
+    color:black; 
+    font-size: 18px; 
+    font-style: normal;
+  background-color: rgb(233, 229, 229); 
+border-collapse: collapse;
+width:55%;
+   
+    
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+    
+   
+  }
+  .input-style {
+    display: -ms-flexbox; 
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+   
+   
+  }
+  
+  .icon {
+   
+    background:silver;
+    color: black;
+    min-width: 20px;
+    text-align: center;
+    border-radius: 1.5px;
+    padding: 10px;
+
+    
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  

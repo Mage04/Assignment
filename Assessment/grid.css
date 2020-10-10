@@ -1,0 +1,53 @@
+.grid {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: 25% 25% 25%;
+    margin-left: 150px;
+    padding: 10px;
+    
+  }
+
+
+  @media screen and (max-width: 200px) {
+    .grid, .grid-item1, .grid-item, .grid2, .button1 span {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .grid2{
+
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: 25% 25% 25%;
+    margin-left: 150px;
+    padding: 10px;
+  }
+  
+  .grid-item {
+  
+    border: 1px solid  grey;
+    padding: 20px;
+    font-size: 15px;
+    text-align: justify;
+    height:150px;
+    background-color: white;
+  }
+  .grid-item1{
+
+    background-color:black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  height:150px;
+    
+  }
+
+  .button1{
+
+    background-color: green;
+    
+  }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="FormValidation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+
+</head>
+<body>
+
+    <h3> REGISTRATION FORM</h3>
+
+ <form id="login-form" method="POST" onSubmit="showAlert()" autocomplete="off" >
+<table class="reg-form" align="center" cellpadding = "10" >
+ 
+
+<tr>
+
+<td>Full Name</td>
+<td>
+<div class="input-style">
+    <i class="fa fa-user icon"></i>
+<input type="text"  name="Full_name" maxlength="30"   placeholder="Full Name" autofocus required></div>
+</td>
+</tr>
+
+<tr>
+<td>Address Line 1</td>
+<td>
+    <div class="input-style">
+        <i class="fa fa-home icon"></i>
+    
+    <input type="text" name="Address_1" maxlength="30"   placeholder="Address Line 1" required></div>
+</td>
+</tr>
+
+<tr>
+    <td>Address Line 2</td>
+    <td>  <div class="input-style">
+        <i class="fa fa-home icon"></i>
+        <input type="text" name="Address_2" maxlength="30"   placeholder="Address Line 2" ></div>
+   </td>
+    </tr>
+    
+
+
+    <tr>
+        <td>City</td>
+        <td><div class="input-style">
+            <i class="fas fa-city icon"></i>
+            <input type="text" name="City" maxlength="25"   placeholder="City" required></div>
+        </td>
+        </tr>
+
+ 
+        <tr>
+            <td>State/Province/Region</td>
+            <td><div class="input-style">
+                <i class="fas fa-map-marker icon"></i>
+                <input type="text" name="SPC" maxlength="45" placeholder="State/Province/Region" required> </div></td>
+            </tr>
+             
+ 
+ 
+            <tr>
+                <td>Postal Code/ZIP</td>
+                <td><div class="input-style">
+                    <i class="fa fa-envelope-open icon"></i>
+                    <input type="text" name="Pin_Code" maxlength="6" placeholder="Postal Code/ZIP" required></div>
+                </td>
+                </tr>
+
+ 
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <div class="input-style">
+                            <i class="fa fa-globe icon"></i><select id="country" name="country" required>
+                        <option value="Afganistan">Afghanistan</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="india">India</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="United Kingdom">United Kingdom</option></select></div>
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Email ID</td>
+                        <td>
+                            <div class="input-style">
+                                <i class="fa fa-envelope icon"></i>
+                                <input type="text" name="Email_Id" maxlength="100"   placeholder="Email ID"></div></td>
+                        </tr>
+
+ 
+
+<tr>
+<td>Phone Number</td>
+<td><div class="input-style">
+    <i class="fa fa-phone icon"></i>
+<input type="text" name="Phone_num" maxlength="10"  placeholder="Phone Number"  required></div>
+</td>
+</tr>
+ 
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+</td>
+</tr>
+</table>
+ 
+</form>
+
+<div>
+    <p style="text-align:end;"> 
+        <a href="grid.html"> Next page</a>
+    </p>
+        </div>
+            </div>
+<script src="FormValidation.js">
+    
+</script>
+
+</body>
+</html>
